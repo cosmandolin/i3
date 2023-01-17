@@ -1,0 +1,36 @@
+def func1(arg1, arg2):
+    var7 = func2(arg2, arg1)
+    var12 = func3(arg1, arg2)
+    var16 = func4(arg1, arg2)
+    result = (-153 | ((var12 | (arg2 ^ var16) + (130 & arg1) & (arg1 ^ arg2 + 621) - var16) + arg1)) & -723487748
+    return result
+def func3(arg8, arg9):
+    var10 = 0
+    for var11 in range(1):
+        var10 += (-9 ^ arg9) | arg8
+    return var10
+def func2(arg3, arg4):
+    var5 = 0
+    for var6 in [arg3 - (arg4 - var5) ^ arg4 for i in (arg3 & i & var5 + arg4 for i in range(44))]:
+        var5 += var5 ^ var5 - var6
+    return var5
+def func4(arg13, arg14):
+    closure = [0]
+    def func5(acc, rest):
+        var15 = (rest ^ 6) + rest
+        closure[0] += var15
+        if acc == 0:
+            return var15
+        else:
+            result = func5(acc - 1, var15)
+            return result
+    result = func5(10, 0)
+    return result
+if __name__ == "__main__":
+    print 'prog_size: 5'
+    print 'func_number: 6'
+    print 'arg_number: 17'
+    for i in xrange(25000):
+        x = 5
+        x = func1(x, i)
+        print x,
